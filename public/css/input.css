@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-color: #185abc;
+	--secondary-color: #b31412;
+}
+
+*,
+*::before,
+*::after {
+	font-family: 'Poppins', sans-serif;
+}
+
+.whatsapp {
+	transition: all 200ms;
+	background: #fff;
+}
+
+.whatsapp:hover {
+	background: linear-gradient(45deg, #075e54, #25d366 45%, #dfdcdc);
+	color: white;
+}
+
+.process-card-circle {
+	background-color: var(--primary-color);
+	transition: background-color 500ms;
+}
+
+.process-card:hover .process-card-circle:nth-of-type(1n) {
+	background-color: var(--secondary-color);
+	transition-delay: calc(n * 2s);
+}
+
+.process-card-circle:not(:first-of-type) {
+	background-color: transparent;
+}
+
+.user-name,
+.user-testimony {
+	transition: all 500ms;
+}
+
+.user:hover .user-testimony {
+	border-color: var(--secondary-color);
+}
+
+.user:hover .user-name {
+	color: var(--secondary-color);
+}
+
+.sector-part i,
+.sector-part span {
+	transition: all 200ms;
+}
+
+.sector-part:hover {
+	& i {
+		color: var(--secondary-color);
+	}
+
+	& span {
+		background: var(--secondary-color);
+	}
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	transition: all 700ms ease-in-out;
+	@apply flex flex-col h-full;
+}
+
+.slider-btn {
+	@apply absolute p-2 px-3 rounded-full hover:bg-primary hover:text-white duration-150 top-[90%] lg:top-[50%] bg-[#FFF4ED] text-primary;
+}
+
+.btn-left {
+	@apply lg:left-[0%] left-[5%];
+}
+.btn-right {
+	@apply lg:right-[0%] right-[70%];
+}
+
+.slide-indicator {
+	@apply w-4 h-4 duration-150 border rounded-full cursor-pointer hover:bg-accent bg-[#185ABC];
+}
+
+.active-indicator {
+	@apply bg-accent;
+}
+
+.gallery {
+	&:hover {
+		.gallery-image-details {
+			@apply opacity-100;
+		}
+	}
+}
+
+.box {
+	@apply duration-150 border rounded-lg hover:border-accent shadow-[0_4px_4px_rgba(0,0,0,0.03)] hover:shadow-[4px_2px_10px_2px_rgba(247,248,237,0.2)];
+}
