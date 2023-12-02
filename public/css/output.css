@@ -1990,6 +1990,10 @@ html{
   height: 30vh;
 }
 
+.h-\[90vh\]{
+  height: 90vh;
+}
+
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
@@ -2004,8 +2008,8 @@ html{
   height: min-content;
 }
 
-.h-10{
-  height: 2.5rem;
+.h-\[50vh\]{
+  height: 50vh;
 }
 
 .min-h-screen{
@@ -2085,16 +2089,6 @@ html{
 
 .translate-y-\[-10\%\]{
   --tw-translate-y: -10%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[-130\%\]{
-  --tw-translate-y: -130%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[-50\%\]{
-  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2247,6 +2241,10 @@ html{
   row-gap: 5rem;
 }
 
+.gap-y-24{
+  row-gap: 6rem;
+}
+
 .gap-y-28{
   row-gap: 7rem;
 }
@@ -2263,28 +2261,12 @@ html{
   row-gap: 1.25rem;
 }
 
-.gap-y-56{
-  row-gap: 14rem;
-}
-
 .gap-y-7{
   row-gap: 1.75rem;
 }
 
-.gap-y-80{
-  row-gap: 20rem;
-}
-
 .gap-y-9{
   row-gap: 2.25rem;
-}
-
-.gap-y-40{
-  row-gap: 10rem;
-}
-
-.gap-y-24{
-  row-gap: 6rem;
 }
 
 .self-start{
@@ -2561,10 +2543,6 @@ html{
   line-height: 1.75rem;
 }
 
-.font-black{
-  font-weight: 900;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -2712,10 +2690,16 @@ html{
   --secondary-color: #b31412;
 }
 
+html {
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .whatsapp {
@@ -2972,10 +2956,6 @@ html{
     width: 50%;
   }
 
-  .lg\:w-1\/4{
-    width: 25%;
-  }
-
   .lg\:w-3\/4{
     width: 75%;
   }
@@ -3032,6 +3012,11 @@ html{
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1200px){
@@ -3055,20 +3040,12 @@ html{
     margin-bottom: 10rem;
   }
 
-  .xl\:mt-24{
-    margin-top: 6rem;
-  }
-
-  .xl\:mt-40{
-    margin-top: 10rem;
-  }
-
   .xl\:mt-20{
     margin-top: 5rem;
   }
 
-  .xl\:mb-20{
-    margin-bottom: 5rem;
+  .xl\:mt-24{
+    margin-top: 6rem;
   }
 
   .xl\:flex{
@@ -3150,28 +3127,12 @@ html{
     justify-content: center;
   }
 
-  .xl\:gap-y-10{
-    row-gap: 2.5rem;
-  }
-
-  .xl\:gap-y-16{
-    row-gap: 4rem;
-  }
-
-  .xl\:gap-y-20{
-    row-gap: 5rem;
-  }
-
-  .xl\:gap-y-5{
-    row-gap: 1.25rem;
-  }
-
   .xl\:gap-y-14{
     row-gap: 3.5rem;
   }
 
-  .xl\:gap-y-1{
-    row-gap: 0.25rem;
+  .xl\:gap-y-5{
+    row-gap: 1.25rem;
   }
 
   .xl\:border-0{

@@ -9,10 +9,16 @@
 	--secondary-color: #b31412;
 }
 
+html {
+	scroll-snap-align: center;
+	scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
 	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
 }
 
 .whatsapp {

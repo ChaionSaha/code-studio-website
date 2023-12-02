@@ -39,6 +39,10 @@ app.get('/contact-us', function (req, res) {
 	res.render('contact-us');
 });
 
+app.get('/comming-soon', function (req, res) {
+	res.render('comming-soon');
+});
+
 app.listen(5000, function () {
 	console.log('Server started on port http://localhost:5000');
 });
